@@ -9,11 +9,29 @@ $(document).ready(function() {
 
 
     var phraseWords = phrases.split("");
-    var firstLetter = phraseWords[0].toUpperCase();
-    phraseWords.shift();
-    var joinedWord = phraseWords.join("");
-    var pigLatinWord = joinedWord.concat(firstLetter + "ay");
-  console.log(pigLatinWord);
+    console.log(phraseWords);
+    
+
+
+    function checkIsVowell(phrasewords[0]){
+      for (var x=0; i<vowells.length; i++){
+        if (phraseWords[0]!==vowells[x]) {
+          var firstLetter = phraseWords[0].toUpperCase();
+          phraseWords.shift();
+          var joinedWord = phraseWords.join("");
+          var pigLatinWord = joinedWord.concat(firstLetter + "ay");
+
+        }
+      }
+    }
+
+
+
+
+
+
+
+
 
 
 
@@ -28,9 +46,7 @@ $(document).ready(function() {
 
       // console.log(wordLetters);
       //
-      // for (var i=0; i<wordLetters.length; i++){
-      //   for (var x=0; i<consonants.length; i++){
-      //   if (wordLetters[0]===consonants[x]){
+
       //
       //
       //

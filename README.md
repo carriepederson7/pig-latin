@@ -1,6 +1,6 @@
 List of Specs
 
-The program recognizes consonants at the beginning of words and moves the first consecutive consonant to the end, and add "ay".
+The program recognizes consonants at the beginning of word and moves the first consecutive consonant to the end, and add "ay".
   Input: pig
   Output: igpay
 
