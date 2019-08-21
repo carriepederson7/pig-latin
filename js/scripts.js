@@ -10,7 +10,10 @@ $(document).ready(function() {
 
     var phraseWords = phrases.split("");
     console.log(phraseWords);
-    if phraseWords[0] !== 
+    if phraseWords[0] !==
+
+    // .match();- to experiment with
+    
 
     var finalWord= checkIsVowel(phraseWords);
     console.log(finalWord);
