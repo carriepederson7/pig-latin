@@ -12,12 +12,12 @@ The program recognizes words beginning with a vowel, add "way" to the end.
   Input: apple
   Output: ppleway
 
-The program recognizes a single vowel and returns it as a single vowell.
+The program recognizes a single vowel and returns it as a single vowel.
   Input: apple
   Output: ppleway
 
 The program recognizes "qu" as a single consonant.
-  Input: squeal
+  Input: squealn check
   Output: ealsquay
 
 The program ignores non-alphabetical characters, since they cannot be vowels.
