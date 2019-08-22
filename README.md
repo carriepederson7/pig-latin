@@ -1,4 +1,7 @@
 List of Specs
+The program recognizes words beginning with a vowel, add "way" to the end.
+Input: apple
+Output: ppleway
 
 The program recognizes consonants at the beginning of word and moves the first consecutive consonant to the end, and add "ay".
   Input: pig
@@ -8,9 +11,6 @@ The program recognizes words beginning with "y", treat "y" as a consonant.
   Input: yes
   Output: esyay
 
-The program recognizes words beginning with a vowel, add "way" to the end.
-  Input: apple
-  Output: ppleway
 
 The program recognizes a single vowel and returns it as a single vowel.
   Input: apple

@@ -1,75 +1,42 @@
-$(document).ready(function() {
-  $("#translator").submit(function(event){
-    event.preventDefault();
+function pigLatinWord(input){
+  var vowels = ['a', 'e', 'i' ,'o', 'u'];
+  var regex = /^[a-zA-Z]/;
+  var word = "";
+  var splitWord =[];
 
-    // var consonants = ["b","c","d","f","g","h","j","k","l","m","n","p","qu","r","s","t","v","w","x","y","z"]
-    var vowels = ["a","e","i","o","u"]
-
-    var phrases = $("#phrase").val();
-
-
-    var phraseWords = phrases.split("");
-    console.log(phraseWords);
-    if phraseWords[0] !==
-
-    // .match();- to experiment with
-    
-
-    var finalWord= checkIsVowel(phraseWords);
-    console.log(finalWord);
-
-    function checkIsVowel(word){
-      var firstLetter;
-      for (var i=0; i<vowels.length; i++){
-        if (word[0] !== vowels[i]) {
-          console.log(word);
-          console.log(vowels[i]);
-          firstLetter = phraseWords[0].toUpperCase();
-          phraseWords.shift();
-          var joinedWord = phraseWords.join("");
-          var pigLatinWord = joinedWord.concat(firstLetter + "ay");
+    for(var i=0; i<input.length; i++){
+      if(regex.test(input[i])){
+        word += input[i].toLowerCase();
         }
-
       }
 
-      return pigLatinWord
+    if(vowels.includes(word[0])){
+      word += "way";
+
+    }else {
+      splitWord = word.split("");
+      for(var i= 0; i<splitWord.length; i++){
+        if(!vowels.includes(splitWord[0])){
+          if(splitWord[0]==="q" && splitWord[1]=== "u"){
+            splitWord.push(splitWord.shift());
+            splitWord.push(splitWord.shift());
+            break;
+          }
+          splitWord.push(splitWord.shift());
+
+        }else {
+          break;
+        }
+      }
+
+        word = splitWord.join("");
+        word = word.concat("ay");
+
+
+
     }
 
 
+    console.log(word);
 
-
-
-
-
-
-
-
-
-
-
-    // console.log(phrases);
-
-
-    // phraseWords.forEach(function(phraseWord) {
-    //   var wordLetters = phraseWord.split("");
-    //   var firstLetter = wordLetters.shift();
-    //   console.log(firstLetter);
-
-      // console.log(wordLetters);
-      //
-
-      //
-      //
-      //
-      //     }
-      //   }
-      // }
-      //
-
-    // });
-    //
-    // console.log(wordLetters);
-
-
-  });
-});
+}
