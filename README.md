@@ -1,3 +1,29 @@
+
+# pig latin
+
+Aug. 2019
+
+
+
+#### _Generates pig latin_
+
+#### By _**Carrie Schmid**_
+
+## Description
+
+
+## Setup/Installation Requirements
+
+
+
+## Known Bugs
+
+_none_
+
+
+
+
+
 List of Specs
 The program recognizes words beginning with a vowel, add "way" to the end.
 Input: apple
@@ -43,3 +69,18 @@ The program recognizes y at the beginning of word in a multiple-word sentence an
 The program recognizes qu at the beginning of word in a multiple-word sentence as a consonant.
     Input:
     Output:
+
+## Support and contact details
+
+
+_Carrie Schmid: carriepederson7@gmail.com_
+
+## Technologies Used
+
+JavaScript
+
+### License
+
+*MIT Liscence*
+
+Copyright (c) 2019 **_Carrie Schmid_**
